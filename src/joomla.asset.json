@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "musalie",
+  "version": "4.0.0",
+  "description": "Musalie template",
+  "license": "GPL-2.0+",
+  "assets": [
+	{
+	  "name": "template.musalie.base",
+	  "type": "style",
+	  "uri": "template.css",
+	  "dependencies": [
+		  "template.ttactua.header"
+	  ]
+	},
+	{
+	  "name": "template.ttactua.header",
+	  "type": "style",
+	  "uri": "header.css"
+	}
+]
+}

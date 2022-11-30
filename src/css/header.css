@@ -1,0 +1,10 @@
+header {
+  padding: 20px 80px;
+  background-color: white;
+}
+header .logo img {
+  width: 120px;
+  height: 120px;
+}
+
+/*# sourceMappingURL=header.css.map */

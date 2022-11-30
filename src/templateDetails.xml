@@ -14,7 +14,14 @@
 	</updateservers>
     <changelogurl>https://gileba.be/changelogs/tpl_musalie.xml</changelogurl>
 	<files>
+		<folder>css</folder>
 		<filename>index.php</filename>
+		<filename>joomla.asset.json</filename>
 		<filename>templateDetails.xml</filename>
 	</files>
+	<media destination="templates/site/musalie" folder="media">
+		<folder>css</folder>
+		<folder>scss</folder>
+		<folder>images</folder>
+	</media>
 </extension>

@@ -1,5 +1,8 @@
 <?php
 	defined('_JEXEC') or die('Restricted access');
+
+	$wa = $this->getWebAssetManager();
+	$wa->useStyle('template.musalie.base');
 ?>
 
 <!DOCTYPE html>
@@ -15,5 +18,10 @@
 ?>
 	</head>
 	<body>
+		<header>
+			<div class="logo">
+				<a href="" alt="Home"><img src="media/templates/site/musalie/images/musalie.jpg" alt="Logo" /></a>
+			</div>
+		</header>
 	</body>
 </html>
