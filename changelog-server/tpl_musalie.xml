@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+	<changelog>
+		<element>tpl_musalie</element>
+		<type>template</type>
+		<version>1.0.0-dev.1</version>
+		<new>
+			<item>Let's start from scratch</item>
+		</new>
+	</changelog>
+</changelogs>
