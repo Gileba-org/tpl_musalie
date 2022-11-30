@@ -10,13 +10,19 @@
 	  "type": "style",
 	  "uri": "template.css",
 	  "dependencies": [
-		  "template.ttactua.header"
+		  "template.musalie.header",
+		  "template.musalie.footer"
 	  ]
 	},
 	{
-	  "name": "template.ttactua.header",
+	  "name": "template.musalie.header",
 	  "type": "style",
 	  "uri": "header.css"
+	},
+	{
+	  "name": "template.musalie.footer",
+	  "type": "style",
+	  "uri": "footer.css"
 	}
 ]
 }

@@ -23,5 +23,8 @@
 				<a href="" alt="Home"><img src="media/templates/site/musalie/images/musalie.jpg" alt="Logo" /></a>
 			</div>
 		</header>
+		<footer>
+			<jdoc:include type="modules" name="footer" />
+		</footer>
 	</body>
 </html>

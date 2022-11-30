@@ -24,4 +24,7 @@
 		<folder>scss</folder>
 		<folder>images</folder>
 	</media>
+	<positions>
+		<position>footer</position>
+	</positions>
 </extension>
