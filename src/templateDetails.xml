@@ -25,6 +25,8 @@
 		<folder>images</folder>
 	</media>
 	<positions>
+		<position>navigation</position>
+		<position>home</position>
 		<position>footer</position>
 	</positions>
 </extension>

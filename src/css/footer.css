@@ -1,6 +1,24 @@
 footer {
   font-size: small;
   text-align: center;
+  background-color: #423E37;
+  color: white;
+  padding: 20px;
+}
+@media screen and (max-width: 840px) {
+  footer p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer p .together {
+    flex-basis: 100%;
+  }
+  footer p .together:first-child {
+    margin-bottom: 5px;
+  }
+  footer p .nomobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

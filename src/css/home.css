@@ -1,0 +1,106 @@
+.home {
+  margin: 10px 30px;
+}
+@media screen and (min-width: 840px) {
+  .home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 50px;
+  }
+}
+.home .moduletable {
+  background-color: #a6cfda;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px #423E37;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 840px) {
+  .home .moduletable {
+    flex-basis: 48%;
+  }
+}
+.home .moduletable .hkc-md-12 {
+  padding: 0;
+}
+.home .moduletable #hikashop_category_information_module_118 div.hikashop_container, .home .moduletable .hikashop_category_information div.hikashop_container {
+  margin: 0;
+}
+.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer, .home .moduletable .hikashop_category_information div.hikashop_subcontainer {
+  background: none;
+  padding: 0;
+}
+.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer .hk-row-fluid .hikashop_product_image, .home .moduletable .hikashop_category_information div.hikashop_subcontainer .hk-row-fluid .hikashop_product_image {
+  padding-top: 20px;
+}
+.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc, .home .moduletable .hikashop_category_information div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc {
+  width: 100%;
+  text-align: center;
+}
+.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc .button, .home .moduletable .hikashop_category_information div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc .button {
+  margin-bottom: 0;
+}
+.home .moduletable h2 {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #A39594;
+  text-align: center;
+  padding: 10px 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: white;
+}
+.home .moduletable h2 a {
+  color: white;
+}
+.home .moduletable img {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.home .moduletable button {
+  background-color: white;
+  font-weight: bold;
+  color: #5e584e;
+  border-radius: 10px;
+  border: 3px solid #A39594;
+  padding: 10px;
+  font-size: 1.5em;
+  box-shadow: 2px 2px 10px 0px #423E37;
+  margin: 0 auto 2px;
+}
+.home .moduletable button:hover {
+  box-shadow: none;
+  margin: 2px 0 0 2px;
+}
+.home .moduletable p {
+  padding: 0 30px;
+}
+.home .moduletable .button {
+  background-color: #A39594;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-self: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+@media screen and (min-width: 840px) {
+  .home .moduletable .button {
+    margin-bottom: 48px;
+  }
+}
+.home .moduletable .button a {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+.home .moduletable .custom {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/*# sourceMappingURL=home.css.map */

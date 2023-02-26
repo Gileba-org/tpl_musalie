@@ -1,6 +1,8 @@
 header {
   padding: 20px 80px;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
 header .logo img {
   width: 120px;

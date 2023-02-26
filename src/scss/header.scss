@@ -1,6 +1,10 @@
+@use "variables";
+
 header {
 	padding: 20px 80px;
-	background-color: white;
+	background-color: variables.$white;
+	display: flex;
+	justify-content: space-between;
 
 	.logo {
 		img {

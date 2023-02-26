@@ -1,0 +1,127 @@
+@use "variables";
+
+.home {
+	margin: 10px 30px;
+	@media screen and (min-width: 840px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 10px 50px;
+	}
+
+	.moduletable {
+		background-color: variables.$secondary-color;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px 0px variables.$support-color;
+		margin-bottom: 50px;
+
+		@media screen and (min-width: 840px) {
+			flex-basis: 48%;
+		}
+
+		@media screen and (min-width: 1250px) {
+//			flex-basis: 31%;
+		}
+
+		.hkc-md-12 {
+			padding: 0;
+		}
+
+		#hikashop_category_information_module_118, .hikashop_category_information {
+			div.hikashop_container {
+				margin: 0;
+			}
+
+			div.hikashop_subcontainer {
+				background: none;
+				padding: 0;
+
+				.hk-row-fluid {
+					.hikashop_product_image {
+						padding-top: 20px;
+					}
+
+					.hikashop_category_desc {
+						width: 100%;
+						text-align: center;
+
+						.button {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		h2 {
+			width: 100%;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+			background-color: variables.$main-color;
+			text-align: center;
+			padding: 10px 0;
+			margin-block-start: 0;
+			margin-block-end: 0;
+			color: variables.$white;
+
+			a {
+				color: variables.$white;
+			}
+		}
+
+		img {
+			border-top-left-radius: 50px;
+			border-bottom-right-radius: 50px;
+		}
+
+		button {
+			background-color: variables.$white;
+			font-weight: bold;
+			color: lighten(variables.$support-color, 10%);
+			border-radius: 10px;
+			border: 3px solid variables.$main-color;
+			padding: 10px;
+			font-size: 1.5em;
+			box-shadow: 2px 2px 10px 0px variables.$support-color;
+			margin: 0 auto 2px;
+
+			&:hover {
+				box-shadow: none;
+				margin: 2px 0 0 2px;
+			}
+		}
+
+		p {
+			padding: 0 30px;
+		}
+
+		.button {
+			background-color: variables.$main-color;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			align-self: flex-end;
+			width: 100%;
+			padding: 10px 0;
+
+			@media screen and (min-width: 840px) {
+			margin-bottom: 48px;
+			}
+
+			a {
+				color: variables.$white;
+				font-size: 1.5em;
+				font-weight: bold;
+				text-decoration: none;
+				border-bottom: 1px dotted variables.$white;
+			}
+		}
+
+		.custom {
+			text-align: center;
+			display: flex;
+			flex-wrap: wrap;
+			height: 100%;
+		}
+	}
+}
+

@@ -1,4 +1,28 @@
+@use "variables";
+
 footer {
 	font-size: small;
 	text-align: center;
+	background-color: variables.$support-color;
+	color: variables.$white;
+	padding: 20px;
+
+	@media screen and (max-width: 840px) {
+		p {
+			display: flex;
+			flex-wrap: wrap;
+
+			.together {
+				flex-basis: 100%;
+
+				&:first-child {
+					margin-bottom: 5px;
+				}
+			}
+
+			.nomobile {
+				display: none;
+			}
+		}
+	}
 }
