@@ -1,0 +1,142 @@
+@use "variables";
+
+.item-page {
+	margin-bottom: 50px;
+
+	@media screen and (min-width: 600px) {
+		display: grid;
+		grid-template-areas: "Header Header" "Text Image";
+		grid-template-columns: 1fr min-content;
+	}
+
+	.page-header {
+		grid-area: Header;
+	}
+
+	.com-content-article__body {
+		grid-area: Text;
+
+		details {
+			margin-bottom: 15px;
+
+			summary {
+				font-size: 1.2em;
+				font-weight: bold;
+				margin-left: 10px;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				span {
+					margin-left: 5px;
+				}
+			}
+
+			p {
+				margin-left: 40px;
+			}
+		}
+	}
+
+	.item-image {
+		grid-area: Image;
+		text-align: center;
+
+		img {
+			max-height: 300px;
+			width: auto;
+
+			@media screen and (min-width: 600px) {
+				margin-left: 50px;
+				margin-right: 200px;
+			}
+		}
+	}
+
+	.contact {
+
+		.data {
+			margin: 18px;
+			padding: 20px 0;
+			background-color: lighten(variables.$secondary-color, 30%);
+			border-radius: 10px;
+			height: fit-content;
+
+			div {
+				padding: 10px 40px;
+			}
+
+			.name {
+				font-weight: bold;
+			}
+
+			.telefoon {
+				display: none;
+			}
+
+			.btw {
+				display: none;
+				font-style: italic;
+				font-size: small;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+			display: flex;
+			gap: 40px;
+
+			& > div {
+				flex-basis: 50%;
+			}
+		}
+
+		.cf-btn {
+			font-weight: bold;
+			font-size: 1.2em !important;
+		}
+	}
+
+	h2, h3 {
+		margin-top: 2em;
+	}
+
+	h2 {
+		color: variables.$secondary-color;
+	}
+
+	button, .button {
+		background-color: variables.$secondary-color;
+		align-self: flex-end;
+		font-weight: bold;
+		color: lighten(variables.$support-color, 10%);
+		border-radius: 10px;
+		border: 3px solid variables.$secondary-color;
+		font-size: 1.2em;
+		box-shadow: 2px 2px 10px 0px variables.$support-color;
+		margin: auto auto 20px;
+		width: 200px;
+		text-align: center;
+		transition-property: margin, box-shadow;
+		transition-duration: 0.3s;
+		padding: 10px 20px;
+
+		&:hover {
+			box-shadow: none;
+			margin: auto auto 20px;
+		}
+
+		a {
+			color: variables.$white;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		&:before {
+			flex-basis: 100%;
+			height: 0;
+		}
+
+	}
+}

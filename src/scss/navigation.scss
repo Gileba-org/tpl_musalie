@@ -1,14 +1,47 @@
 @use "variables";
 
 nav {
-	ul {
+	flex-shrink: 1;
+
+	.product-search {
+		text-align: right;
+
+		.inputboxproduct-search {
+			padding: 5px 10px;
+			border-radius: 10px;
+			border-style: solid;
+			font-size: 1em;
+			border-color: variables.$main-color;
+			max-width: 50%;
+		}
+	}
+
+	.dj-submenu {
+		display: block;
+	}
+
+	.dj-megamenu-modern li a.dj-up_a {
+		padding: 0 20px;
+	}
+
+	.dj-megamenu-wrapper {
+		text-align: right;
+		padding-bottom: 10px;
+
+		.dj-megamenu-select-light .dj-mobile-open-btn, .dj-megamenu-offcanvas-light .dj-mobile-open-btn, .dj-megamenu-accordion-light .dj-mobile-open-btn	{
+			background: white;
+			color: variables.$text-color;
+		}
+	}
+
+	ul, .dj-megamenu-modern {
 		display: flex;
 		list-style-type: none;
 
 		li {
 			margin-left: 20px;
 
-			a {
+			a, a.dj-up_a {
 				color: variables.$text-color;
 				font-weight: bold;
 				text-decoration: none;

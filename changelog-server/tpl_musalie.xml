@@ -3,9 +3,9 @@
 	<changelog>
 		<element>tpl_musalie</element>
 		<type>template</type>
-		<version>1.0.0-dev.1</version>
+		<version>1.0.0</version>
 		<new>
-			<item>Let's start from scratch</item>
+			<item>First Release</item>
 		</new>
 	</changelog>
 </changelogs>

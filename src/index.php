@@ -6,13 +6,23 @@
 	$app = Factory::getApplication();
 	$menu = $app->getMenu();
 	$lang = $app->getLanguage();
+	$page = $app->getRouter()->getVars();
 	$wa = $this->getWebAssetManager();
 
 	if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 		$wa->useStyle('template.musalie.home');
 	}
 	else {
-		$wa->useStyle('template.musalie.base');
+		switch ($page["option"]) {
+			case "com_content":
+				$wa->useStyle('template.musalie.article');
+			case "com_virtuemart":
+				$wa->useStyle('template.musalie.virtuemart');
+			case "com_users":
+				$wa->useStyle('template.musalie.account');
+			default:
+				$wa->useStyle('template.musalie.base');
+		}
 	}
 ?>
 
@@ -38,12 +48,14 @@
 			</nav>
 		</header>
 		<main>
-<?php	if ($menu->getActive() == $menu->getDefault($lang->getTag())) { ?>
-			<div class="home">
-				<jdoc:include type="modules" name="home" style="html5" />
-			</div>
-<?php	}	?>
+			<jdoc:include type="message" />
+			<div class="breadcrumbs"><jdoc:include type="modules" name="breadcrumbs" style="html5" /></div>
 			<jdoc:include type="component" />
+<?php	if ($menu->getActive() == $menu->getDefault($lang->getTag())) { ?>
+						<div class="home">
+							<jdoc:include type="modules" name="home" style="html5" />
+						</div>
+			<?php	}	?>
 		</main>
 		<footer>
 			<jdoc:include type="modules" name="footer" style="html5" />

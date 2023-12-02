@@ -11,7 +11,18 @@
 	  "uri": "template.css",
 	  "dependencies": [
 		  "template.musalie.header",
-		  "template.musalie.footer"  	  ]
+		  "template.musalie.footer",
+		  "fontawesome"
+	  ]
+	},
+	{
+	  "name": "template.musalie.virtuemart",
+	  "type": "style",
+	  "uri": "virtuemart.css",
+	  "dependencies": [
+		  "template.musalie.base",
+		  "template.musalie.account"
+	  ]
 	},
 	{
 	  "name": "template.musalie.header",
@@ -36,6 +47,36 @@
 	  "name": "template.musalie.navigation",
 	  "type": "style",
 	  "uri": "navigation.css"
-  	}
+  	},
+	{
+	  "name": "fontawesome",
+	  "type": "style",
+	  "uri": "system/joomla-fontawesome.min.css"
+	},
+	{
+	  "name": "template.musalie.account",
+	  "type": "style",
+	  "uri": "account.css",
+	  "dependencies": "template.musalie.base"
+	},
+	{
+	  "name": "template.musalie.article",
+	  "type": "style",
+	  "uri": "article.css",
+	  "dependencies": ["template.musalie.base", "template.musalie.blog", "template.musalie.imageslider"]
+	},
+	{
+	  "name": "template.musalie.blog",
+	  "type": "style",
+	  "uri": "blog.css",
+	  "dependencies": "template.musalie.base"
+	},
+	{
+	  "name": "template.musalie.imageslider",
+	  "type": "style",
+	  "uri": "dj-imageslider.css",
+	  "dependencies": "template.musalie.base"
+	}
+
 ]
 }

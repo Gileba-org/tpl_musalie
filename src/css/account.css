@@ -1,0 +1,90 @@
+.com-users-login__form fieldset, .com-users-logout__form fieldset, .com-users-reset__form fieldset, .com-users-remind__form fieldset, .form-validate fieldset {
+  border: 0;
+  padding: 0;
+}
+.com-users-login__form fieldset legend:not(.userfields_info), .com-users-logout__form fieldset legend:not(.userfields_info), .com-users-reset__form fieldset legend:not(.userfields_info), .com-users-remind__form fieldset legend:not(.userfields_info), .form-validate fieldset legend:not(.userfields_info) {
+  margin-bottom: 50px;
+}
+.com-users-login__form fieldset .control-group, .com-users-logout__form fieldset .control-group, .com-users-reset__form fieldset .control-group, .com-users-remind__form fieldset .control-group, .form-validate fieldset .control-group {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 600px) {
+  .com-users-login__form fieldset .control-group, .com-users-logout__form fieldset .control-group, .com-users-reset__form fieldset .control-group, .com-users-remind__form fieldset .control-group, .form-validate fieldset .control-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+  }
+}
+.com-users-login__form fieldset .control-group input, .com-users-logout__form fieldset .control-group input, .com-users-reset__form fieldset .control-group input, .com-users-remind__form fieldset .control-group input, .form-validate fieldset .control-group input {
+  font-size: 1em;
+  line-height: 1.1em;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #A39594;
+}
+.com-users-login__form .com-users-login__remember, .com-users-logout__form .com-users-login__remember, .com-users-reset__form .com-users-login__remember, .com-users-remind__form .com-users-login__remember, .form-validate .com-users-login__remember {
+  margin-bottom: 20px;
+}
+.com-users-login__form label.required .star, .com-users-logout__form label.required .star, .com-users-reset__form label.required .star, .com-users-remind__form label.required .star, .form-validate label.required .star {
+  color: red;
+}
+.com-users-login__form .form-control-feedback, .com-users-login__form .input-password-toggle, .com-users-logout__form .form-control-feedback, .com-users-logout__form .input-password-toggle, .com-users-reset__form .form-control-feedback, .com-users-reset__form .input-password-toggle, .com-users-remind__form .form-control-feedback, .com-users-remind__form .input-password-toggle, .form-validate .form-control-feedback, .form-validate .input-password-toggle {
+  display: none;
+}
+.com-users-login__form input.invalid, .com-users-logout__form input.invalid, .com-users-reset__form input.invalid, .com-users-remind__form input.invalid, .form-validate input.invalid {
+  background-color: salmon;
+}
+.com-users-login__form button, .com-users-login__form .button, .com-users-logout__form button, .com-users-logout__form .button, .com-users-reset__form button, .com-users-reset__form .button, .com-users-remind__form button, .com-users-remind__form .button, .form-validate button, .form-validate .button {
+  background-color: #3A98B9;
+  align-self: flex-end;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border: 3px solid #3A98B9;
+  font-size: 1.2em;
+  box-shadow: 2px 2px 10px 0px #423E37;
+  margin: 0 auto 20px;
+  width: auto;
+  transition-property: margin, box-shadow;
+  transition-duration: 0.3s;
+  padding: 10px 20px;
+}
+.com-users-login__form button:hover, .com-users-login__form .button:hover, .com-users-logout__form button:hover, .com-users-logout__form .button:hover, .com-users-reset__form button:hover, .com-users-reset__form .button:hover, .com-users-remind__form button:hover, .com-users-remind__form .button:hover, .form-validate button:hover, .form-validate .button:hover {
+  box-shadow: none;
+  margin: 2px auto 18px;
+}
+.com-users-login__form button a, .com-users-login__form .button a, .com-users-logout__form button a, .com-users-logout__form .button a, .com-users-reset__form button a, .com-users-reset__form .button a, .com-users-remind__form button a, .com-users-remind__form .button a, .form-validate button a, .form-validate .button a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.com-users-login__form button:before, .com-users-login__form .button:before, .com-users-logout__form button:before, .com-users-logout__form .button:before, .com-users-reset__form button:before, .com-users-reset__form .button:before, .com-users-remind__form button:before, .com-users-remind__form .button:before, .form-validate button:before, .form-validate .button:before {
+  flex-basis: 100%;
+  height: 0;
+}
+.com-users-login__form button[type=reset], .com-users-logout__form button[type=reset], .com-users-reset__form button[type=reset], .com-users-remind__form button[type=reset], .form-validate button[type=reset] {
+  background-color: white;
+  color: #3A98B9;
+}
+.com-users-login__form .user-details, .com-users-logout__form .user-details, .com-users-reset__form .user-details, .com-users-remind__form .user-details, .form-validate .user-details {
+  margin-bottom: 50px;
+}
+
+.com-users-login__options {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-validate {
+  display: grid;
+}
+.form-validate .buttonBar-right {
+  float: none;
+  order: 100;
+  text-align: left;
+}
+
+/*# sourceMappingURL=account.css.map */

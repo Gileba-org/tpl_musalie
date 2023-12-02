@@ -1,17 +1,45 @@
-nav ul {
+nav {
+  flex-shrink: 1;
+}
+nav .product-search {
+  text-align: right;
+}
+nav .product-search .inputboxproduct-search {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-style: solid;
+  font-size: 1em;
+  border-color: #A39594;
+  max-width: 50%;
+}
+nav .dj-submenu {
+  display: block;
+}
+nav .dj-megamenu-modern li a.dj-up_a {
+  padding: 0 20px;
+}
+nav .dj-megamenu-wrapper {
+  text-align: right;
+  padding-bottom: 10px;
+}
+nav .dj-megamenu-wrapper .dj-megamenu-select-light .dj-mobile-open-btn, nav .dj-megamenu-wrapper .dj-megamenu-offcanvas-light .dj-mobile-open-btn, nav .dj-megamenu-wrapper .dj-megamenu-accordion-light .dj-mobile-open-btn {
+  background: white;
+  color: #423E37;
+}
+nav ul, nav .dj-megamenu-modern {
   display: flex;
   list-style-type: none;
 }
-nav ul li {
+nav ul li, nav .dj-megamenu-modern li {
   margin-left: 20px;
 }
-nav ul li a {
+nav ul li a, nav ul li a.dj-up_a, nav .dj-megamenu-modern li a, nav .dj-megamenu-modern li a.dj-up_a {
   color: #423E37;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.2em;
 }
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.dj-up_a:hover, nav .dj-megamenu-modern li a:hover, nav .dj-megamenu-modern li a.dj-up_a:hover {
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 5px;

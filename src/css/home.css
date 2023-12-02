@@ -1,3 +1,17 @@
+.blog-featured {
+  padding: 0 60px 20px;
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.blog-featured .blog-item {
+  padding: 20px;
+  background-color: #3A98B9;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 .home {
   margin: 10px 30px;
 }
@@ -5,102 +19,154 @@
   .home {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     margin: 10px 50px;
   }
 }
 .home .moduletable {
-  background-color: #a6cfda;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px 0px #423E37;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 840px) {
   .home .moduletable {
-    flex-basis: 48%;
+    flex-basis: 45%;
   }
 }
-.home .moduletable .hkc-md-12 {
-  padding: 0;
+@media screen and (min-width: 1250px) {
+  .home .moduletable {
+    flex-basis: 29%;
+  }
 }
-.home .moduletable #hikashop_category_information_module_118 div.hikashop_container, .home .moduletable .hikashop_category_information div.hikashop_container {
-  margin: 0;
-}
-.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer, .home .moduletable .hikashop_category_information div.hikashop_subcontainer {
-  background: none;
-  padding: 0;
-}
-.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer .hk-row-fluid .hikashop_product_image, .home .moduletable .hikashop_category_information div.hikashop_subcontainer .hk-row-fluid .hikashop_product_image {
-  padding-top: 20px;
-}
-.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc, .home .moduletable .hikashop_category_information div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc {
-  width: 100%;
-  text-align: center;
-}
-.home .moduletable #hikashop_category_information_module_118 div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc .button, .home .moduletable .hikashop_category_information div.hikashop_subcontainer .hk-row-fluid .hikashop_category_desc .button {
+.home .moduletable.full {
+  flex-basis: 100%;
   margin-bottom: 0;
 }
-.home .moduletable h2 {
-  width: 100%;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  background-color: #A39594;
-  text-align: center;
-  padding: 10px 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color: white;
+.home .moduletable.full .vmgroup.full {
+  margin-bottom: 0;
 }
-.home .moduletable h2 a {
-  color: white;
+.home .moduletable.full .productdetails {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
 }
-.home .moduletable img {
+.home .moduletable.full .productdetails .product-container {
+  border: 2px solid #3A98B9;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  max-width: 300px;
+  padding: 20px 20px 0;
 }
-.home .moduletable button {
-  background-color: white;
+.home .moduletable.full .productdetails .product-container .spacer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+.home .moduletable.full .productdetails .product-container .spacer div.clear + a {
+  height: 45px;
+  text-align: center;
+  font-weight: bolder;
+}
+.home .moduletable.full .productdetails .product-container .spacer .PricesalesPrice {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #3A98B9;
+}
+.home .moduletable.full .productdetails .product-container .spacer .productdetails {
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 0;
+}
+.home .moduletable.full .productdetails .product-container .spacer .productdetails .product-price {
+  margin-bottom: 0;
+}
+.home .moduletable.full .productdetails .product-container .spacer .productdetails .addtocart-area {
+  margin: 0;
+}
+.home .moduletable.full .productdetails .product-container .spacer .productdetails .addtocart-area .vm-customfields-wrap {
+  display: none;
+}
+.home .moduletable.full .productdetails .product-container .spacer .productdetails .addtocart-area .addtocart-bar {
+  margin: 0 0 20px;
+}
+.home .moduletable.full .productdetails .product-container .spacer .productdetails .addtocart-area span.addtocart-button {
+  margin-left: 20px;
+}
+.home .moduletable.full .productdetails .product-container .spacer .productdetails .addtocart-area span.addtocart-button input.addtocart-button {
+  border-radius: 20px;
+  border: none;
+  background-color: green;
+  font-weight: 700;
+  color: white !important;
+}
+.home .moduletable .image {
+  padding-top: 0;
+  width: 100%;
+}
+.home .moduletable .image img {
+  max-width: 100%;
+  height: auto;
+  background-color: #423E37;
+  width: auto;
+  max-height: 275px;
+}
+.home .moduletable h2 {
+  margin: 0 auto 20px;
+  text-align: center;
+  margin-block-start: 0;
+  color: #423E37;
+}
+.home .moduletable h2 a {
+  color: #423E37;
+}
+.home .moduletable button, .home .moduletable .button {
+  background-color: #3A98B9;
+  align-self: flex-end;
   font-weight: bold;
   color: #5e584e;
   border-radius: 10px;
-  border: 3px solid #A39594;
-  padding: 10px;
-  font-size: 1.5em;
+  border: 3px solid #3A98B9;
+  font-size: 1.2em;
   box-shadow: 2px 2px 10px 0px #423E37;
-  margin: 0 auto 2px;
+  margin: auto auto 20px;
+  width: auto;
+  transition-property: margin, box-shadow;
+  transition-duration: 0.3s;
+  padding: 10px 20px;
 }
-.home .moduletable button:hover {
+.home .moduletable button:hover, .home .moduletable .button:hover {
   box-shadow: none;
-  margin: 2px 0 0 2px;
+  margin: auto auto 20px;
 }
-.home .moduletable p {
-  padding: 0 30px;
-}
-.home .moduletable .button {
-  background-color: #A39594;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  align-self: flex-end;
-  width: 100%;
-  padding: 10px 0;
-}
-@media screen and (min-width: 840px) {
-  .home .moduletable .button {
-    margin-bottom: 48px;
-  }
-}
-.home .moduletable .button a {
+.home .moduletable button a, .home .moduletable .button a {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 1px dotted white;
+}
+.home .moduletable button:before, .home .moduletable .button:before {
+  flex-basis: 100%;
+  height: 0;
+}
+.home .moduletable div {
+  width: 100%;
+  margin-bottom: 20px;
 }
 .home .moduletable .custom {
   text-align: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   height: 100%;
+  justify-content: flex-start;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 /*# sourceMappingURL=home.css.map */
