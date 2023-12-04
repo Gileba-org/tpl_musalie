@@ -1,28 +1,38 @@
 @use "variables";
 
 footer {
-	font-size: small;
-	text-align: center;
+	font-size: medium;
 	background-color: variables.$support-color;
 	color: variables.$white;
 	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-	@media screen and (max-width: 840px) {
-		p {
-			display: flex;
-			flex-wrap: wrap;
+	div.moduletable {
+		margin: 0 20px;
 
-			.together {
-				flex-basis: 100%;
+		ul.nav {
+			list-style: none;
+			padding-inline-start: 0;
+			text-align: left;
+		}
+	}
 
-				&:first-child {
-					margin-bottom: 5px;
-				}
+	p {
+		display: flex;
+		flex-wrap: wrap;
+
+		.together {
+			flex-basis: 100%;
+
+			&:first-child {
+				margin-bottom: 5px;
 			}
+		}
 
-			.nomobile {
-				display: none;
-			}
+		.nomobile {
+			display: none;
 		}
 	}
 }

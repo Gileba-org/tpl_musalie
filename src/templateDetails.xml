@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" method="upgrade">
 	<name>musalie</name>
-	<creationDate>2023-12-02</creationDate>
+	<creationDate>2023-12-04</creationDate>
 	<author>Gijs Lamon</author>
 	<authorEmail>info@gileba.be</authorEmail>
 	<authorUrl>https://gileba.be/</authorUrl>
 	<copyright>(c)2022 by Gileba</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>J4 template for musalie.be</description>
 	<updateservers>
 		<server type="extension" priority="1" name="Musalie Template Update Site">https://gileba.be/updates/tpl_musalie.xml</server>
